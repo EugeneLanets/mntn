@@ -1,58 +1,204 @@
-/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
+@import url("./fonts.css");
+@import url("./variables.css");
 
-/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: inherit;
 }
+
 html {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  --bg-color: #0B1D26;
-  --bg-color-transparent: rgba(11.48, 29.32, 38.25, 0);
   background-color: var(--bg-color);
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  font-family: "Gilroy", sans-serif;
 }
 
 .root {
-  max-width: 1920px;
-  min-height: 1000vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 200px;
   margin: 0 auto;
-
-  background-image:
-    linear-gradient(180deg, var(--bg-color-transparent) 0%, var(--bg-color) 72%),
-    linear-gradient(transparent, var(--bg-color) 30%),
-    url("../img/VG.png"),
-    url('../img/MG.png'),
-    linear-gradient(327deg, var(--bg-color-transparent) 0%, var(--bg-color) 100%),
-    url("../img/HG.png")
-    ;
-  background-repeat: no-repeat;
-  background-size:
-    100% 700px,
-    100% 1200px,
-    100%,
-    100%,
-    100% 1200px,
-    100%
-  ;
+  background-image: linear-gradient(
+      180deg,
+      var(--bg-color-transparent) 0%,
+      var(--bg-color) 72%
+    ),
+    linear-gradient(transparent, var(--bg-color) 30%), url("../img/VG.png"),
+    url("../img/MG.png"),
+    linear-gradient(
+      327deg,
+      var(--bg-color-transparent) 0%,
+      var(--bg-color) 100%
+    ),
+    url("../img/HG.png");
   background-position:
     center 1200px,
     center calc(768px + 880px),
     center 768px,
     center 464px,
     center 0,
-    center 0
-  ;
+    center 0;
+  background-size:
+    100% 700px,
+    100% 1200px,
+    100%,
+    100%,
+    100% 1200px,
+    100%;
+  background-repeat: no-repeat;
 
+  padding: 64px 0;
+  max-width: 1920px;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  width: 91.5%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 108px;
+  height: 24px;
+  fill: var(--text-color);
+  vertical-align: middle;
+  transition: 0.5s;
+
+  &:hover {
+    fill: var(--accent-color);
+  }
+}
+
+.main-nav {
+  display: flex;
+  gap: 40px;
+}
+
+.link {
+  transition: 0.5s;
+  color: var(--text-color);
+  line-height: 22px;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.link-accent {
+  color: var(--accent-color);
+  &:hover {
+    color: var(--text-color);
+  }
+}
+
+.profile-name {
+  transition: 0.5s;
+  margin: 0;
+  color: var(--text-color);
+  font-size: 17px;
+  line-height: 21px;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 0 auto 940px;
+  width: 54%;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  color: var(--accent-color);
+  font-weight: 800;
+  line-height: 22px;
+  text-transform: uppercase;
+
+  &::before {
+    background-color: var(--accent-color);
+    width: 72px;
+    height: 2px;
+    content: "";
+  }
+}
+
+.title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 88px;
+  line-height: 100px;
+  font-family: "Chronicle Display", sans-serif;
+  text-transform: capitalize;
+}
+
+.title-sm {
+  font-size: 64px;
+  line-height: 77px;
+}
+
+.preparations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  counter-reset: preparations 0;
+  margin: 0 auto;
+  padding: 0;
+  width: 84%;
+  list-style: none;
+}
+
+.preparation {
+  display: flex;
+  gap: 115px;
+  counter-increment: preparations;
+  &:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+}
+
+.content {
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 27px;
+  padding: 140px 0 140px 150px;
+  min-width: 100px;
+  height: 100px;
+
+  &::before {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    opacity: 0.1;
+    content: "0" counter(preparations);
+    font-size: 240px;
+    line-height: 1;
+  }
+}
+
+.content-text {
+  padding: 0;
 }
