@@ -1,47 +1,32 @@
 @font-face {
-  font-family: 'Chronicle Display';
   font-weight: 700;
-  src:
-    url("../fonts/chronicledisplay-bold.woff2"),
-    url("../fonts/chronicledisplay-bold.woff")
+  src: url("../fonts/chronicledisplay-bold.woff2"),
+    url("../fonts/chronicledisplay-bold.woff");
+  font-family: "Chronicle Display";
 }
 
 @font-face {
-  font-family: 'Chronicle Display';
   font-weight: 600;
-  src:
-    url("../fonts/chronicledisplay-semi.woff2"),
-    url("../fonts/chronicledisplay-semi.woff")
+  src: url("../fonts/chronicledisplay-semi.woff2"),
+    url("../fonts/chronicledisplay-semi.woff");
+  font-family: "Chronicle Display";
 }
 
 @font-face {
-  font-family: 'Gilroy';
   font-weight: 500;
-  src:
-    url("../fonts/gilroy-medium.woff2"),
-    url("../fonts/gilroy-medium.woff")
+  src: url("../fonts/gilroy-medium.woff2"), url("../fonts/gilroy-medium.woff");
+  font-family: "Gilroy";
 }
 
 @font-face {
-  font-family: 'Gilroy';
-  font-weight: 600;
-  src:
-    url("../fonts/gilroy-bold.woff2"),
-    url("../fonts/gilroy-bold.woff")
-}
-
-@font-face {
-  font-family: 'Gilroy';
   font-weight: 700;
-  src:
-    url("../fonts/gilroy-bold.woff2"),
-    url("../fonts/gilroy-bold.woff")
+  src: url("../fonts/gilroy-bold.woff2"), url("../fonts/gilroy-bold.woff");
+  font-family: "Gilroy";
 }
 
 @font-face {
-  font-family: 'Gilroy';
   font-weight: 800;
-  src:
-    url("../fonts/gilroy-extrabold.woff2"),
-    url("../fonts/gilroy-extrabold.woff")
+  src: url("../fonts/gilroy-extrabold.woff2"),
+    url("../fonts/gilroy-extrabold.woff");
+  font-family: "Gilroy";
 }

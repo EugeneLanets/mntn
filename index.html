@@ -17,18 +17,31 @@
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
-  <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
-  <div class="root">
+  <div class="root" id="start">
+    <nav class="aside-nav">
+      <a href="#start" class="link">
+        Start
+      </a>
+      <a href="#01" class="link">
+        01
+      </a>
+      <a href="#02" class="link">
+        02
+      </a>
+      <a href="#03" class="link">
+        03
+      </a>
+    </nav>
     <header class="header container">
       <a href="/" class="logo-link">
-      <svg class="logo">
-        <use xlink:href="./img/sprite.svg#logo"></use>
-      </svg>
+        <svg class="logo">
+          <use xlink:href="./img/sprite.svg#logo"></use>
+        </svg>
       </a>
       <nav class="main-nav">
         <a href="" class="link">Equipment</a>
@@ -36,52 +49,94 @@
         <a href="" class="link">Blog</a>
       </nav>
       <a href="" class="profile">
-      <p class="profile-name">Account</p>
+        <p class="profile-name">Account</p>
       </a>
     </header>
-    <main class="container">
-      <section class="hero">
+    <main>
+      <section class="hero container">
         <div class="label">A hiking guide</div>
         <h1 class="title">
           Be prepared for the Mountains and beyond!
         </h1>
-        <a href="#" class="link">scroll down &ShortDownArrow;</a>
+        <a href="#01" class="link">scroll down &ShortDownArrow;</a>
       </section>
-      <ul class="preparations-list">
-        <li class="preparation">
-          <div class="content">
-            <div class="label">GEt Started</div>
-            <h2 class="title title-sm">What level of  hiker are you?</h2>
-            <p class="content-text">Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? </p>
-            <a href="#" class="link link-accent">read more &rightarrow;</a>
-          </div>
-          <img src="./img/01.png" alt="" class="img">
-        </li>
-        <li class="preparation">
-          <div class="content">
-            <div class="label">Hiking Essentials</div>
-            <h2 class="title title-sm">Picking the right Hiking Gear!</h2>
-            <p class="content-text">The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get away with things you already have.
-              Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet.</p>
-            <a href="#" class="link link-accent">read more &rightarrow;</a>
-          </div>
-          <img src="./img/02.png" alt="" class="img">
-        </li>
-        <li class="preparation">
-          <div class="content">
-            <div class="label">where you go is the key</div>
-            <h2 class="title title-sm">Understand Your Map & Timing</h2>
-            <p class="content-text">To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I’ll read the guide and know that say, in a mile, I make a right turn at the junction..</p>
-            <a href="#" class="link link-accent">read more &rightarrow;</a>
-          </div>
-          <img src="./img/03.png" alt="" class="img">
-        </li>
-      </ul>
+      <section class="preparations container">
+        <ul class="preparations-list">
+          <li class="preparation container-sm" id="01">
+            <div class="content">
+              <div class="label">GEt Started</div>
+              <h2 class="title title-sm">What level of hiker are you?</h2>
+              <p class="content-text">Determining what level of hiker you are can be an important tool when planning future
+                hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various
+                websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate,
+                expert, or expert backpacker? </p>
+              <a href="#" class="link link-accent">read more &rightarrow;</a>
+            </div>
+            <img src="./img/01.png" alt="" class="img">
+          </li>
+          <li class="preparation container-sm" id="02">
+            <div class="content">
+              <div class="label">Hiking Essentials</div>
+              <h2 class="title title-sm">Picking the right Hiking Gear!</h2>
+              <p class="content-text">The nice thing about beginning hiking is that you don’t really need any special gear,
+                you can probably get away with things you already have.
+                Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes,
+                which will get heavy and chafe wif they get sweaty or wet.</p>
+              <a href="#" class="link link-accent">read more &rightarrow;</a>
+            </div>
+            <img src="./img/02.png" alt="" class="img">
+          </li>
+          <li class="preparation container-sm" id="03">
+            <div class="content">
+              <div class="label">where you go is the key</div>
+              <h2 class="title title-sm">Understand Your Map & Timing</h2>
+              <p class="content-text">To start, print out the hiking guide and map. If it’s raining, throw them in a
+                Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know
+                what my next landmark is as I hike. For example, I’ll read the guide and know that say, in a mile, I make a
+                right turn at the junction..</p>
+              <a href="#" class="link link-accent">read more &rightarrow;</a>
+            </div>
+            <img src="./img/03.png" alt="" class="img">
+          </li>
+        </ul>
+      </section>
     </main>
-    <footer class="footer">Footer</footer>
+    <footer class="footer container container-sm">
+      <div class="about">
+        <a href="/" class="logo-link">
+          <svg class="logo">
+            <use xlink:href="./img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <p class="description">Get out there & discover your next <br> slope, mountain & destination!</p>
+        <p class="copyright">Copyright 2019 MNTN, Inc. Terms & Privacy</p>
+      </div>
+      <div class="menus">
+        <div class="menu menu-blog">
+          <h3 class="title-xs">More on The Blog</h3>
+          <ul class="menu-list">
+            <li class="menu-item"><a href="#" class="menu-link">About MNTN</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Contributors & Writers</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Write For Us</a></li>
+
+            <li class="menu-item"><a href="#" class="menu-link">Contact Us</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="menu menu-mntn">
+          <h3 class="title-xs">More on MNTN</h3>
+          <ul class="menu-list">
+            <li class="menu-item"><a href="#" class="menu-link">The Team</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Jobs</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Press</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </footer>
   </div>
 
-
+  <script src="js/app.js"></script>
 </body>
 
 </html>
